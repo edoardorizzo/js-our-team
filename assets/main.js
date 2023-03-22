@@ -39,7 +39,7 @@ const team = [
 for (let index = 0; index < team.length; index++) {
     const singleMember = team[index];
     const memberList = document.createElement('li');
-    memberList.innerHTML = `${singleMember.name} - ${singleMember.role} - ${singleMember.image}`;
+    memberList.innerHTML = singleMember.name + ' - ' + singleMember.role + ' - ' + singleMember.image;
     ul.appendChild(memberList);
     console.log(singleMember);
     console.log(memberList);
