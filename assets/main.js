@@ -1,3 +1,6 @@
+const ul = document.createElement('ul');
+document.body.appendChild(ul);
+
 const team = [
     {
         name: 'Wayne Barnett',
@@ -31,8 +34,11 @@ const team = [
     },
 ]
 
-console.log(team);
-
-for (const key in team) {
-    console.log(team[key]);
+//console.log(team);
+for (let index = 0; index < team.length; index++) {
+    const singleMember = team[index];
+    const memberList = document.createElement('li');
+    memberList.innerHTML = singleMember;
+    ul.appendChild(memberList);
 }
+
