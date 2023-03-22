@@ -35,10 +35,12 @@ const team = [
 ]
 
 //console.log(team);
+
 for (let index = 0; index < team.length; index++) {
     const singleMember = team[index];
     const memberList = document.createElement('li');
-    memberList.innerHTML = singleMember;
+    memberList.innerHTML = singleMember.role;
     ul.appendChild(memberList);
+    console.log(singleMember);
+    console.log(memberList);
 }
-
